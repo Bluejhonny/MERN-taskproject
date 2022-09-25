@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 
 const app = express()
+const port = process.env.PORT || 3001
 
 app.use(express.json())
 app.use(cors())
@@ -42,4 +43,4 @@ app.get('/todo/complete/:id', async(req, res)=>{
     res.json(todo)
 })
 
-app.listen(3001, () => console.log("Server started on port 3001"))
+app.listen(port, () => console.log("Server started on port 3001"))

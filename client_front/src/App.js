@@ -57,7 +57,7 @@ function App() {
 //front
   return (
     <div className="App">
-      <h1> Welcome, Jhonny</h1>
+      <h1> Welcome, User</h1>
       <h4> Your Tasks</h4>
       <div className='todos'>
         {todos.map(todo => (
